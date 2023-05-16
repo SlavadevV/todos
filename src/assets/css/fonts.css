@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Wix';
+    src: url('/assets/fonts/WixMadeforDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Wix';
+  src: url('/assets/fonts/WixMadeforDisplay-Medium.woff2') format('woff2');
+  font-weight: medium;
+  font-style: normal;
+}

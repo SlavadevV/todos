@@ -1,0 +1,108 @@
+.noteWrapper{
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 3px 3px 17px -9px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.3s scale ease;
+}
+
+.noteWrapper:hover{
+    scale: 1.02;
+}
+
+.noteTitle{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.noteDescription{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.noteOpen .noteDescription{
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+    width: unset;
+}
+
+.noteWrapper:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.noteEditConfirm{
+    fill: #009900;
+}
+
+.noteEditConfirm:hover{
+    fill: #33cc33;
+}
+
+.noteTrash{
+    fill: #B00000;
+}
+
+.noteTrash:hover{
+    fill: #800000;
+}
+
+.noteEdit{
+    fill: #76a0e3;
+}
+
+.noteEdit:hover{
+    fill: #5c8fe0;
+}
+
+.noteBlock{
+    cursor: pointer;
+}
+
+.noteOpen{
+    transition: 0.3s all ease;
+    width: 400px;
+    height: 300px;
+    justify-content: space-between;
+    align-items: unset;
+    z-index: 1;
+}
+
+.noteOverlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.notePanelWrapper{
+    margin-left: 1rem;
+}
+
+.notePanel{
+    display: flex;
+    align-items: center;
+}
+
+.noteIcon{
+    cursor: pointer;
+    transition: 0.3s fill ease;
+    cursor: pointer;
+}
+
+.noteEditDescription{
+    width: 100%;
+    resize: vertical;
+    height: calc(100% - 2.5rem);
+    max-height: calc(100% - 2.5rem);
+}

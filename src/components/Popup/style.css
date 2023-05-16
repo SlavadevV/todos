@@ -1,0 +1,53 @@
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.popupInner {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.popupCloseIcon{
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.popupCloseIcon::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+}
+
+.popupCloseIcon::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+}

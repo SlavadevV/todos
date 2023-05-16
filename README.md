@@ -7,4 +7,4 @@ Simple list of notes where you can create, delete and edit them. There is also a
 npm run dev
 ```
 
-### Demo on [GitHub Pages]([https://pages.github.com/](https://slavadevv.github.io/todos/))
+### Demo on [GitHub Pages](https://slavadevv.github.io/todos/)
